@@ -123,7 +123,7 @@ def sub_loop(self, port, topic, sub_q):
 from sys import platform
 import getpass
 
-def safe_launch(script_path, args=[], timeout=60, sudo=False):
+def safe_launch(script_path, args=[], timeout=60, sudo=True):
     t = time.time()
     cmd = [sys.executable, script_path]
     
