@@ -30,6 +30,9 @@ intent_classifier_prompt = PromptTemplate(
     template=intent_classifier_template,
     input_variables=["user_input"],
     partial_variables={
-        "format_instructions": intent_classifier_parser.get_format_instructions()
+        "format_instructions": intent_classifier_parser.get_format_instructions() 
+        # 这里会生成一段说明
+        # 根据pydantic_object的定义
+        # 生成一段文本, 告诉LLM输出应该是什么样的
     },
 )

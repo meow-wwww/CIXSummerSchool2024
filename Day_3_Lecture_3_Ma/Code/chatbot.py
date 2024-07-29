@@ -29,14 +29,14 @@ langchain.debug = False  # set verbose mode to True to show more execution detai
 
 load_dotenv()
 
-langchain_llm = AzureChatOpenAI(
-    azure_endpoint=os.getenv("MY_AZURE_ENDPOINT"),
-    api_key=os.getenv("MY_AZURE_API_KEY"),
-    api_version=os.getenv("MY_AZURE_API_VERSION"),
-    openai_api_type="azure",
-    azure_deployment=os.getenv("MY_AZURE_DEPLOYMENT_NAME"),
-    verbose=True,
-)
+# langchain_llm = AzureChatOpenAI(
+#     azure_endpoint=os.getenv("MY_AZURE_ENDPOINT"),
+#     api_key=os.getenv("MY_AZURE_API_KEY"),
+#     api_version=os.getenv("MY_AZURE_API_VERSION"),
+#     openai_api_type="azure",
+#     azure_deployment=os.getenv("MY_AZURE_DEPLOYMENT_NAME"),
+#     verbose=True,
+# )
 
 # Or use openai's model
 langchain_llm = ChatOpenAI(
